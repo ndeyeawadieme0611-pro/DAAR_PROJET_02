@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Données volumineuses (régénérées par les scripts)
+data/raw/
+data/processed/
+
+# Front
+frontend/node_modules/
+frontend/dist/
