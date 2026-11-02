@@ -92,6 +92,10 @@ def main():
     # Reprise : on repart des livres déjà validés
     books = json.loads(META.read_text(encoding="utf-8")) if META.exists() else []
     done = {b["id"] for b in books}
+    one = {b["id"] for b in books}
+    excluded = ROOT / "data" / "processed" / "excluded.json"
+    if excluded.exists():   # livres écartés comme doublons : ne pas les reprendre
+        done |= {e["id"] for e in json.loads(excluded.read_text(encoding="utf-8"))}
     print(f"Reprise : {len(books)} livres déjà validés.")
 
     # 2. Liste des livres candidats (texte, anglais, pas encore traités)
@@ -99,6 +103,16 @@ def main():
         rows = [r for r in csv.DictReader(f)
                 if r["Type"] == "Text" and r["Language"] == "en"
                 and int(r["Text#"]) not in done]
+        # Un seul livre par titre : on ignore les rééditions d'un titre déjà présent
+        def norm(title):
+            return " ".join(title.lower().split())
+        seen = {norm(b["title"]) for b in books}
+        unique_rows = []
+        for r in rows:
+            if norm(r["Title"]) not in seen:
+                seen.add(norm(r["Title"]))
+                unique_rows.append(r)
+        rows = unique_rows
 
     # 3. Traitement par paquets, avec WORKERS téléchargements en parallèle
     t0 = time.time()
