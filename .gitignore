@@ -226,3 +226,4 @@ data/processed/
 # Front
 frontend/node_modules/
 frontend/dist/
+.venv/
