@@ -16,7 +16,7 @@ from collections import Counter, defaultdict
 
 import psycopg
 
-DB_URL = os.environ.get("DATABASE_URL", "postgresql://daar@localhost/library")
+DB_URL = os.environ["DATABASE_URL"]
 K = 200        # mots gardés par livre
 MIN_DF = 5     # un mot doit apparaître dans au moins 5 livres pour compter
 

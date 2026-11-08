@@ -1,25 +1,19 @@
+
 """
-deduplicate.py — Détecte et écarte les doublons de la bibliothèque.
+deduplicate.py — Détection prudente des doublons.
 
-Règle (choisie d'après l'analyse des distances de Jaccard) :
-    doublon si  distance < SEUIL_CONTENU
-           OU  (même titre ET distance < SEUIL_TITRE)
-Les doublons sont regroupés (union-find : si A≈B et B≈C, alors A, B, C
-forment un seul groupe) ; on garde le livre le plus long de chaque groupe.
-On écarte aussi les sections du dictionnaire Webster (l'édition complète reste).
+Règle :
+- comparaison des paires directes uniquement ;
+- distance de Jaccard < 0.05 ;
+- conservation du livre ayant le plus de mots ;
+- exclusion des sections Webster (l'édition complète reste).
 
-Les livres écartés sont :
-    - retirés de data/processed/metadata.json,
-    - déplacés de data/raw/ vers data/excluded/,
-    - listés dans data/processed/excluded.json (pour ne pas les re-télécharger).
-
-Ensuite : relancer download_books.py pour compléter la bibliothèque,
-puis build_index.py, build_graph.py, pagerank.py.
-
-Usage : python -u backend/scripts/deduplicate.py
+Les exclusions sont enregistrées sans doublons dans excluded.json.
 """
+
 import json
 import os
+import shutil
 from pathlib import Path
 
 import psycopg
@@ -29,97 +23,148 @@ RAW_DIR = ROOT / "data" / "raw"
 EXCL_DIR = ROOT / "data" / "excluded"
 META = ROOT / "data" / "processed" / "metadata.json"
 EXCLUDED = ROOT / "data" / "processed" / "excluded.json"
-DB_URL = os.environ.get("DATABASE_URL", "postgresql://daar@localhost/library")
 
-SEUIL_CONTENU = 0.35   # contenu quasi identique, quel que soit le titre
-SEUIL_TITRE = 0.92     # même titre : coupure naturelle entre 0.90 et 0.946
-WEBSTER_COMPLET = 673  # édition complète du dictionnaire, à garder
+DB_URL = os.environ["DATABASE_URL"]
 
-
-# --------------------------------------------------------------------------
-# Union-find : regroupe les éléments reliés, même indirectement
-# --------------------------------------------------------------------------
-parent = {}
-
-
-def find(x):
-    """Renvoie le représentant du groupe de x (avec compression de chemin)."""
-    parent.setdefault(x, x)
-    if parent[x] != x:
-        parent[x] = find(parent[x])
-    return parent[x]
-
-
-def union(a, b):
-    parent[find(a)] = find(b)
+SEUIL_CONTENU = 0.05
+WEBSTER_COMPLET = 673
 
 
 def main():
-    with psycopg.connect(DB_URL) as con, con.cursor() as cur:
-        # 1. Paires de doublons selon la règle
-        pairs = cur.execute("""
-            SELECT j.book_a, j.book_b
-            FROM jaccard j
-            JOIN books a ON a.id = j.book_a
-            JOIN books b ON b.id = j.book_b
-            WHERE j.distance < %s
-               OR (lower(trim(a.title)) = lower(trim(b.title)) AND j.distance < %s)
-        """, (SEUIL_CONTENU, SEUIL_TITRE)).fetchall()
+    # 1. Lecture des données PostgreSQL
+    with psycopg.connect(DB_URL, connect_timeout=10) as con:
+        with con.cursor() as cur:
+            pairs = cur.execute("""
+                SELECT j.book_a, j.book_b, j.distance
+                FROM jaccard j
+                WHERE j.distance < %s
+                ORDER BY j.distance ASC
+            """, (SEUIL_CONTENU,)).fetchall()
 
-        books = {row[0]: row[1:] for row in cur.execute(
-            "SELECT id, title, word_count FROM books")}
+            books = {
+                row[0]: {
+                    "title": row[1],
+                    "word_count": row[2]
+                }
+                for row in cur.execute(
+                    "SELECT id, title, word_count FROM books"
+                )
+            }
 
-        webster_sections = [r[0] for r in cur.execute(
-            "SELECT id FROM books WHERE title ILIKE %s AND id <> %s",
-            ("%webster%dictionary%", WEBSTER_COMPLET))]
+            webster_sections = [
+                row[0]
+                for row in cur.execute("""
+                    SELECT id
+                    FROM books
+                    WHERE title ILIKE %s AND id <> %s
+                """, ("%webster%dictionary%", WEBSTER_COMPLET))
+            ]
 
-    # 2. Regroupement des doublons
-    for a, b in pairs:
-        union(a, b)
-    groups = {}
-    for book_id in parent:
-        groups.setdefault(find(book_id), []).append(book_id)
-
-    # 3. Dans chaque groupe, on garde le livre le plus long
+    # 2. Sélection des paires directes
+    used = set()
     excluded = []
-    for members in groups.values():
-        kept = max(members, key=lambda i: books[i][1])
-        for i in members:
-            if i != kept:
-                excluded.append({"id": i, "title": books[i][0],
-                                 "reason": "doublon", "kept": kept})
-    for i in webster_sections:
-        if all(e["id"] != i for e in excluded):
-            excluded.append({"id": i, "title": books[i][0],
-                             "reason": "section du dictionnaire", "kept": WEBSTER_COMPLET})
 
-    # 4. Mise à jour des fichiers
-    excluded_ids = {e["id"] for e in excluded}
-    previous = json.loads(EXCLUDED.read_text(encoding="utf-8")) if EXCLUDED.exists() else []
-    EXCLUDED.write_text(json.dumps(previous + excluded, indent=1, ensure_ascii=False),
-                        encoding="utf-8")
+    for a, b, distance in pairs:
+        if a in used or b in used:
+            continue
 
+        if a not in books or b not in books:
+            continue
+
+        kept = max(
+            (a, b),
+            key=lambda book_id: books[book_id]["word_count"]
+        )
+        removed = b if kept == a else a
+
+        excluded.append({
+            "id": removed,
+            "title": books[removed]["title"],
+            "reason": f"doublon direct (distance {distance:.4f})",
+            "kept": kept
+        })
+
+        used.update((a, b))
+
+    # 3. Ajouter les sections Webster encore présentes
     meta = json.loads(META.read_text(encoding="utf-8"))
-    meta = [b for b in meta if b["id"] not in excluded_ids]
-    META.write_text(json.dumps(meta, indent=1, ensure_ascii=False), encoding="utf-8")
+    meta_ids = {int(book["id"]) for book in meta}
 
+    for book_id in webster_sections:
+        if book_id in meta_ids and book_id not in used:
+            excluded.append({
+                "id": book_id,
+                "title": books[book_id]["title"],
+                "reason": "section du dictionnaire Webster",
+                "kept": WEBSTER_COMPLET
+            })
+
+    excluded_ids = {item["id"] for item in excluded}
+
+    # 4. Vérifier les conflits avant tout déplacement
     EXCL_DIR.mkdir(parents=True, exist_ok=True)
-    for i in excluded_ids:
-        src = RAW_DIR / f"{i}.txt"
+
+    for book_id in excluded_ids:
+        src = RAW_DIR / f"{book_id}.txt"
+        dst = EXCL_DIR / f"{book_id}.txt"
+
+        if src.exists() and dst.exists():
+            raise FileExistsError(
+                f"Les deux fichiers existent pour le livre {book_id}. "
+                "Aucun fichier n'a été déplacé."
+            )
+
+    # 5. Déplacer les fichiers concernés
+    for book_id in excluded_ids:
+        src = RAW_DIR / f"{book_id}.txt"
+        dst = EXCL_DIR / f"{book_id}.txt"
+
         if src.exists():
-            src.rename(EXCL_DIR / f"{i}.txt")
+            shutil.move(str(src), str(dst))
 
-    # 5. Bilan
-    print(f"{len(pairs)} paires de doublons -> {len(groups)} groupes")
-    print(f"{len(excluded)} livres écartés "
-          f"(dont {len(webster_sections)} sections du dictionnaire)")
-    print(f"Bibliothèque : {len(meta)} livres restants")
-    if len(meta) < 1700:
-        print(f"-> relancer download_books.py 1700 pour en ajouter {1700 - len(meta)}")
+    # 6. Mettre à jour les métadonnées
+    meta = [
+        book for book in meta
+        if int(book["id"]) not in excluded_ids
+    ]
 
-    print("\nExemples de groupes :")
-    for members in sorted(groups.values(), key=len, reverse=True)[:5]:
-        print("  " + " | ".join(f"{i}:{books[i][0][:30]}" for i in members))
+    # 7. Mettre à jour l'historique sans doublons
+    previous = (
+        json.loads(EXCLUDED.read_text(encoding="utf-8"))
+        if EXCLUDED.exists()
+        else []
+    )
+
+    history = {int(item["id"]): item for item in previous}
+
+    for item in excluded:
+        history[item["id"]] = item
+
+    EXCLUDED.write_text(
+        json.dumps(
+            list(history.values()),
+            indent=1,
+            ensure_ascii=False
+        ),
+        encoding="utf-8"
+    )
+
+    META.write_text(
+        json.dumps(meta, indent=1, ensure_ascii=False),
+        encoding="utf-8"
+    )
+
+    # 8. Bilan
+    print(f"Paires candidates : {len(pairs)}")
+    print(f"Doublons directs retenus : {len(excluded)}")
+    print(f"Bibliothèque restante : {len(meta)} livres")
+    print(f"Sections Webster déjà exclues : {len(webster_sections)}")
+
+    for item in excluded:
+        print(
+            f"Exclu : {item['id']} - {item['title']} "
+            f"(conservé : {item['kept']})"
+        )
 
 
 if __name__ == "__main__":

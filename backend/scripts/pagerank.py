@@ -13,7 +13,7 @@ import time
 
 import psycopg
 
-DB_URL = os.environ.get("DATABASE_URL", "postgresql://daar@localhost/library")
+DB_URL = os.environ["DATABASE_URL"]
 SEUIL = 0.91      # seuil choisi d'après les statistiques de build_graph.py
 ALPHA = 0.85      # facteur d'amortissement (probabilité de suivre une arête)
 EPS = 1e-6        # critère de convergence

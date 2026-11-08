@@ -26,8 +26,8 @@ import psycopg
 ROOT = Path(__file__).resolve().parents[2]
 RAW_DIR = ROOT / "data" / "raw"
 META = ROOT / "data" / "processed" / "metadata.json"
-DB_URL = os.environ.get("DATABASE_URL", "postgresql://daar@localhost/library")
 
+DB_URL = os.environ["DATABASE_URL"]
 WORD_RE = re.compile(r"[a-z]+")   # appliqué après passage en minuscules
 
 # Mots trop fréquents pour être utiles à la recherche (anglais).
