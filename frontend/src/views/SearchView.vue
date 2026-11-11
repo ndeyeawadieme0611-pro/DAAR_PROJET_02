@@ -34,7 +34,7 @@ const EXAMPLES = [
   { q: 'love', mode: 'keyword' },
   { q: 'sherlock', mode: 'keyword' },
   { q: 'wh.le', mode: 'regex' },
-  { q: 'colou?r', mode: 'regex' },
+  { q: 'colou*r', mode: 'regex' },
 ]
 const SORTS = [
   { value: 'score', label: 'Pertinence' },
