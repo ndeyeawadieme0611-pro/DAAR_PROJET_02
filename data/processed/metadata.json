@@ -1,135 +1,98 @@
 [
  {
-  "id": 12,
-  "title": "Through the Looking-Glass",
-  "authors": [
-   "Carroll, Lewis, 1832-1898"
-  ],
-  "word_count": 31094
+  "id": 10,
+  "title": "The King James Version of the Bible",
+  "authors": "",
+  "word_count": 792180
  },
  {
   "id": 11,
   "title": "Alice's Adventures in Wonderland",
-  "authors": [
-   "Carroll, Lewis, 1832-1898"
-  ],
+  "authors": "Carroll, Lewis, 1832-1898",
   "word_count": 27427
  },
  {
-  "id": 16,
-  "title": "Peter Pan",
-  "authors": [
-   "Barrie, J. M. (James Matthew), 1860-1937"
-  ],
-  "word_count": 48036
- },
- {
-  "id": 10,
-  "title": "The King James Version of the Bible",
-  "authors": [],
-  "word_count": 792180
+  "id": 12,
+  "title": "Through the Looking-Glass",
+  "authors": "Carroll, Lewis, 1832-1898",
+  "word_count": 31094
  },
  {
   "id": 15,
   "title": "Moby-Dick; or, The Whale",
-  "authors": [
-   "Melville, Herman, 1819-1891"
-  ],
+  "authors": "Melville, Herman, 1819-1891",
   "word_count": 219249
  },
  {
-  "id": 18,
-  "title": "The Federalist Papers",
-  "authors": [
-   "Hamilton, Alexander, 1757-1804",
-   "Jay, John, 1745-1829",
-   "Madison, James, 1751-1836"
-  ],
-  "word_count": 196527
+  "id": 16,
+  "title": "Peter Pan",
+  "authors": "Barrie, J. M. (James Matthew), 1860-1937",
+  "word_count": 48036
  },
  {
   "id": 17,
   "title": "The Book of Mormon",
-  "authors": [
-   "Smith, Joseph, Jr., 1805-1844",
-   "Church of Jesus Christ of Latter-day Saints"
-  ],
+  "authors": "Smith, Joseph, Jr., 1805-1844; Church of Jesus Christ of Latter-day Saints",
   "word_count": 269413
+ },
+ {
+  "id": 18,
+  "title": "The Federalist Papers",
+  "authors": "Hamilton, Alexander, 1757-1804; Jay, John, 1745-1829; Madison, James, 1751-1836",
+  "word_count": 196527
  },
  {
   "id": 19,
   "title": "The Song of Hiawatha",
-  "authors": [
-   "Longfellow, Henry Wadsworth, 1807-1882",
-   "Morris, Woodrow W. [Editor]"
-  ],
+  "authors": "Longfellow, Henry Wadsworth, 1807-1882; Morris, Woodrow W. [Editor]",
   "word_count": 33236
  },
  {
   "id": 21,
-  "title": "Three hundred Aesop’s fables\r\nTranslated by George Fyler Townsend",
-  "authors": [
-   "Aesop, 621? BCE-565? BCE",
-   "Townsend, George Fyler, 1814-1900 [Translator]"
-  ],
+  "title": "Three hundred Aesop’s fables\r\r\nTranslated by George Fyler Townsend",
+  "authors": "Aesop, 621? BCE-565? BCE; Townsend, George Fyler, 1814-1900 [Translator]",
   "word_count": 45078
+ },
+ {
+  "id": 22,
+  "title": "Roget's Thesaurus",
+  "authors": "Roget, Peter Mark, 1779-1869",
+  "word_count": 205282
  },
  {
   "id": 23,
   "title": "Narrative of the Life of Frederick Douglass, an American Slave",
-  "authors": [
-   "Douglass, Frederick, 1818-1895"
-  ],
+  "authors": "Douglass, Frederick, 1818-1895",
   "word_count": 41320
  },
  {
   "id": 24,
   "title": "O Pioneers!",
-  "authors": [
-   "Cather, Willa, 1873-1947"
-  ],
+  "authors": "Cather, Willa, 1873-1947",
   "word_count": 57303
- },
- {
-  "id": 22,
-  "title": "Roget's Thesaurus",
-  "authors": [
-   "Roget, Peter Mark, 1779-1869"
-  ],
-  "word_count": 205282
  },
  {
   "id": 27,
   "title": "Far from the Madding Crowd",
-  "authors": [
-   "Hardy, Thomas, 1840-1928"
-  ],
+  "authors": "Hardy, Thomas, 1840-1928",
   "word_count": 141941
  },
  {
   "id": 28,
-  "title": "The Fables of Aesop\r\nSelected, Told Anew, and Their History Traced",
-  "authors": [
-   "Aesop, 621? BCE-565? BCE",
-   "Jacobs, Joseph, 1854-1916 [Editor]"
-  ],
+  "title": "The Fables of Aesop\r\r\nSelected, Told Anew, and Their History Traced",
+  "authors": "Aesop, 621? BCE-565? BCE; Jacobs, Joseph, 1854-1916 [Editor]",
   "word_count": 14995
  },
  {
   "id": 31,
   "title": "Plays of Sophocles: Oedipus the King; Oedipus at Colonus; Antigone",
-  "authors": [
-   "Sophocles, 496? BCE-407 BCE",
-   "Storr, Francis, 1839-1919 [Translator]"
-  ],
+  "authors": "Sophocles, 496? BCE-407 BCE; Storr, Francis, 1839-1919 [Translator]",
   "word_count": 37996
  },
  {
   "id": 32,
   "title": "Herland",
-  "authors": [
-   "Gilman, Charlotte Perkins, 1860-1935"
-  ],
+  "authors": "Gilman, Charlotte Perkins, 1860-1935",
   "word_count": 53934
  },
  {
@@ -295,6 +258,12 @@
   "word_count": 47741
  },
  {
+  "id": 73,
+  "title": "The Red Badge of Courage: An Episode of the American Civil War",
+  "authors": "Crane, Stephen, 1871-1900",
+  "word_count": 47097
+ },
+ {
   "id": 74,
   "title": "The Adventures of Tom Sawyer, Complete",
   "authors": "Twain, Mark, 1835-1910",
@@ -421,6 +390,12 @@
   "word_count": 58364
  },
  {
+  "id": 97,
+  "title": "Flatland: A Romance of Many Dimensions",
+  "authors": "Abbott, Edwin Abbott, 1838-1926",
+  "word_count": 34170
+ },
+ {
   "id": 98,
   "title": "A Tale of Two Cities",
   "authors": "Dickens, Charles, 1812-1870",
@@ -461,6 +436,12 @@
   "title": "Jungle Tales of Tarzan",
   "authors": "Burroughs, Edgar Rice, 1875-1950",
   "word_count": 75480
+ },
+ {
+  "id": 108,
+  "title": "The Return of Sherlock Holmes",
+  "authors": "Doyle, Arthur Conan, 1859-1930",
+  "word_count": 114081
  },
  {
   "id": 110,
@@ -517,8 +498,14 @@
   "word_count": 145404
  },
  {
+  "id": 123,
+  "title": "At the Earth's Core",
+  "authors": "Burroughs, Edgar Rice, 1875-1950",
+  "word_count": 50192
+ },
+ {
   "id": 124,
-  "title": "Deuterocanonical Books of the Bible\r\nApocrypha",
+  "title": "Deuterocanonical Books of the Bible\r\r\nApocrypha",
   "authors": "Anonymous",
   "word_count": 141746
  },
@@ -548,7 +535,7 @@
  },
  {
   "id": 131,
-  "title": "The Pilgrim's Progress from this world to that which is to come\r\nDelivered under the similitude of a dream, by John Bunyan",
+  "title": "The Pilgrim's Progress from this world to that which is to come\r\r\nDelivered under the similitude of a dream, by John Bunyan",
   "authors": "Bunyan, John, 1628-1688",
   "word_count": 57568
  },
@@ -632,7 +619,7 @@
  },
  {
   "id": 146,
-  "title": "A Little Princess\r\nBeing the whole story of Sara Crewe now told for the first time",
+  "title": "A Little Princess\r\r\nBeing the whole story of Sara Crewe now told for the first time",
   "authors": "Burnett, Frances Hodgson, 1849-1924",
   "word_count": 68019
  },
@@ -653,6 +640,12 @@
   "title": "The Lost Continent",
   "authors": "Burroughs, Edgar Rice, 1875-1950",
   "word_count": 38244
+ },
+ {
+  "id": 150,
+  "title": "The Republic",
+  "authors": "Plato, 428? BCE-348? BCE; Jowett, Benjamin, 1817-1893 [Translator]",
+  "word_count": 125170
  },
  {
   "id": 152,
@@ -823,12 +816,6 @@
   "word_count": 1315683
  },
  {
-  "id": 201,
-  "title": "Flatland: A Romance of Many Dimensions",
-  "authors": "Abbott, Edwin Abbott, 1838-1926",
-  "word_count": 34481
- },
- {
   "id": 202,
   "title": "My Bondage and My Freedom",
   "authors": "Douglass, Frederick, 1818-1895",
@@ -919,16 +906,16 @@
   "word_count": 165674
  },
  {
+  "id": 219,
+  "title": "Heart of Darkness",
+  "authors": "Conrad, Joseph, 1857-1924",
+  "word_count": 39070
+ },
+ {
   "id": 220,
   "title": "The Secret Sharer",
   "authors": "Conrad, Joseph, 1857-1924",
   "word_count": 16945
- },
- {
-  "id": 221,
-  "title": "The Return of Sherlock Holmes",
-  "authors": "Doyle, Arthur Conan, 1859-1930",
-  "word_count": 114419
  },
  {
   "id": 222,
@@ -1034,13 +1021,13 @@
  },
  {
   "id": 250,
-  "title": "A Brief History of the Internet\r\nThe Bright Side: The Dark Side",
+  "title": "A Brief History of the Internet\r\r\nThe Bright Side: The Dark Side",
   "authors": "Hart, Michael, 1947-2011; Fuller, Maxwell",
   "word_count": 16171
  },
  {
   "id": 252,
-  "title": "Copyright Law of the United States of America\r\nContained in Title 17 of the United States Code",
+  "title": "Copyright Law of the United States of America\r\r\nContained in Title 17 of the United States Code",
   "authors": "Library of Congress. Copyright Office; United States",
   "word_count": 30691
  },
@@ -1130,7 +1117,7 @@
  },
  {
   "id": 275,
-  "title": "The Augsburg Confession\r\nThe confession of faith, which was submitted to His Imperial Majesty Charles V at the diet of Augsburg in the year 1530",
+  "title": "The Augsburg Confession\r\r\nThe confession of faith, which was submitted to His Imperial Majesty Charles V at the diet of Augsburg in the year 1530",
   "authors": "Melanchthon, Philipp, 1497-1560",
   "word_count": 14391
  },
@@ -1159,12 +1146,6 @@
   "word_count": 133746
  },
  {
-  "id": 285,
-  "title": "The Lost Continent",
-  "authors": "Hyne, C. J. Cutcliffe, 1866-1944",
-  "word_count": 98508
- },
- {
   "id": 286,
   "title": "Laddie: A True Blue Story",
   "authors": "Stratton-Porter, Gene, 1863-1924",
@@ -1190,7 +1171,7 @@
  },
  {
   "id": 290,
-  "title": "The Stark Munro Letters\r\nBeing series of twelve letters written by J. Stark Munro, M.B., to his friend and former fellow-student, Herbert Swanborough, of Lowell, Massachusetts, during the years 1881-1884",
+  "title": "The Stark Munro Letters\r\r\nBeing series of twelve letters written by J. Stark Munro, M.B., to his friend and former fellow-student, Herbert Swanborough, of Lowell, Massachusetts, during the years 1881-1884",
   "authors": "Doyle, Arthur Conan, 1859-1930",
   "word_count": 78918
  },
@@ -1574,7 +1555,7 @@
  },
  {
   "id": 359,
-  "title": "Good Stories for Great Holidays\r\nArranged for Story-Telling and Reading Aloud and for the Children's Own Reading",
+  "title": "Good Stories for Great Holidays\r\r\nArranged for Story-Telling and Reading Aloud and for the Children's Own Reading",
   "authors": "Olcott, Frances Jenkins, 1872-1963",
   "word_count": 91606
  },
@@ -1670,7 +1651,7 @@
  },
  {
   "id": 376,
-  "title": "A Journal of the Plague Year\r\nBeing Observations or Memorials of the Most Remarkable Occurrences, as Well Public as Private, Which Happened in London During the Last Great Visitation in 1665. Written by a Citizen Who Continued All the While in London",
+  "title": "A Journal of the Plague Year\r\r\nBeing Observations or Memorials of the Most Remarkable Occurrences, as Well Public as Private, Which Happened in London During the Last Great Visitation in 1665. Written by a Citizen Who Continued All the While in London",
   "authors": "Defoe, Daniel, 1661?-1731",
   "word_count": 94792
  },
@@ -1730,7 +1711,7 @@
  },
  {
   "id": 387,
-  "title": "Vailima Letters\r\nBeing Correspondence Addressed by Robert Louis Stevenson to Sidney Colvin, November 1890-October 1894",
+  "title": "Vailima Letters\r\r\nBeing Correspondence Addressed by Robert Louis Stevenson to Sidney Colvin, November 1890-October 1894",
   "authors": "Stevenson, Robert Louis, 1850-1894",
   "word_count": 89474
  },
@@ -1880,7 +1861,7 @@
  },
  {
   "id": 415,
-  "title": "The Bible in Spain\r\nOr, the Journeys, Adventures, and Imprisonments of an Englishman, in an Attempt to Circulate the Scriptures in the Peninsula",
+  "title": "The Bible in Spain\r\r\nOr, the Journeys, Adventures, and Imprisonments of an Englishman, in an Attempt to Circulate the Scriptures in the Peninsula",
   "authors": "Borrow, George, 1803-1881",
   "word_count": 223222
  },
@@ -1994,13 +1975,13 @@
  },
  {
   "id": 435,
-  "title": "Miracle Mongers and Their Methods\r\nA Complete Exposé of the Modus Operandi of Fire Eaters, Heat Resisters, Poison Eaters, Venomous Reptile Defiers, Sword Swallowers, Human Ostriches, Strong Men, Etc.",
+  "title": "Miracle Mongers and Their Methods\r\r\nA Complete Exposé of the Modus Operandi of Fire Eaters, Heat Resisters, Poison Eaters, Venomous Reptile Defiers, Sword Swallowers, Human Ostriches, Strong Men, Etc.",
   "authors": "Houdini, Harry, 1874-1926",
   "word_count": 39677
  },
  {
   "id": 436,
-  "title": "The Master Key\r\nAn Electrical Fairy Tale Founded Upon the Mysteries of Electricity",
+  "title": "The Master Key\r\r\nAn Electrical Fairy Tale Founded Upon the Mysteries of Electricity",
   "authors": "Baum, L. Frank (Lyman Frank), 1856-1919",
   "word_count": 35616
  },
@@ -2155,14 +2136,8 @@
   "word_count": 55081
  },
  {
-  "id": 463,
-  "title": "The Red Badge of Courage: An Episode of the American Civil War",
-  "authors": "Crane, Stephen, 1871-1900",
-  "word_count": 47166
- },
- {
   "id": 464,
-  "title": "In the South Seas\r\nBeing an Account of Experiences and Observations in the Marquesas, Paumotus and Gilbert Islands in the Course of Two Cruises on the Yacht \"Casco\" (1888) and the Schooner \"Equator\" (1889)",
+  "title": "In the South Seas\r\r\nBeing an Account of Experiences and Observations in the Marquesas, Paumotus and Gilbert Islands in the Course of Two Cruises on the Yacht \"Casco\" (1888) and the Schooner \"Equator\" (1889)",
   "authors": "Stevenson, Robert Louis, 1850-1894",
   "word_count": 103495
  },
@@ -2294,7 +2269,7 @@
  },
  {
   "id": 486,
-  "title": "Ozma of Oz\r\nA Record of Her Adventures with Dorothy Gale of Kansas, the Yellow Hen, the Scarecrow, the Tin Woodman, Tiktok, the Cowardly Lion, and the Hungry Tiger; Besides Other Good People too Numerous to Mention Faithfully Recorded Herein",
+  "title": "Ozma of Oz\r\r\nA Record of Her Adventures with Dorothy Gale of Kansas, the Yellow Hen, the Scarecrow, the Tin Woodman, Tiktok, the Cowardly Lion, and the Hungry Tiger; Besides Other Good People too Numerous to Mention Faithfully Recorded Herein",
   "authors": "Baum, L. Frank (Lyman Frank), 1856-1919",
   "word_count": 39959
  },
@@ -2474,7 +2449,7 @@
  },
  {
   "id": 518,
-  "title": "The Enchanted Island of Yew\r\nWhereon Prince Marvel Encountered the High Ki of Twi and Other Surprising People",
+  "title": "The Enchanted Island of Yew\r\r\nWhereon Prince Marvel Encountered the High Ki of Twi and Other Surprising People",
   "authors": "Baum, L. Frank (Lyman Frank), 1856-1919",
   "word_count": 37700
  },
@@ -2513,12 +2488,6 @@
   "title": "Youth, a Narrative",
   "authors": "Conrad, Joseph, 1857-1924",
   "word_count": 13581
- },
- {
-  "id": 526,
-  "title": "Heart of Darkness",
-  "authors": "Conrad, Joseph, 1857-1924",
-  "word_count": 39111
  },
  {
   "id": 527,
@@ -2627,12 +2596,6 @@
   "title": "Anne's House of Dreams",
   "authors": "Montgomery, L. M. (Lucy Maud), 1874-1942",
   "word_count": 83371
- },
- {
-  "id": 545,
-  "title": "At the Earth's Core",
-  "authors": "Burroughs, Edgar Rice, 1875-1950",
-  "word_count": 50202
  },
  {
   "id": 546,
@@ -2840,13 +2803,13 @@
  },
  {
   "id": 584,
-  "title": "Our Nig; Or, Sketches from the Life of a Free Black, in a Two-story White House, North\r\nShowing That Slavery's Shadows Fall Even There",
+  "title": "Our Nig; Or, Sketches from the Life of a Free Black, in a Two-story White House, North\r\r\nShowing That Slavery's Shadows Fall Even There",
   "authors": "Wilson, Harriet E., 1825-1900",
   "word_count": 25796
  },
  {
   "id": 585,
-  "title": "Running a Thousand Miles for Freedom\r\nOr, The Escape of William and Ellen Craft from Slavery",
+  "title": "Running a Thousand Miles for Freedom\r\r\nOr, The Escape of William and Ellen Craft from Slavery",
   "authors": "Craft, William, -1900; Craft, Ellen, 1826-1891",
   "word_count": 25661
  },
@@ -2966,7 +2929,7 @@
  },
  {
   "id": 608,
-  "title": "Areopagitica\r\nA Speech for the Liberty of Unlicensed Printing to the Parliament of England",
+  "title": "Areopagitica\r\r\nA Speech for the Liberty of Unlicensed Printing to the Parliament of England",
   "authors": "Milton, John, 1608-1674",
   "word_count": 18080
  },
@@ -2998,7 +2961,7 @@
   "id": 615,
   "title": "Orlando Furioso",
   "authors": "Ariosto, Lodovico, 1474-1533; Rose, William Stewart, 1775-1843 [Translator]",
-  "word_count": 308499
+  "word_count": 308493
  },
  {
   "id": 617,
@@ -3170,7 +3133,7 @@
  },
  {
   "id": 653,
-  "title": "The Chimes\r\nA Goblin Story of Some Bells That Rang an Old Year out and a New Year In",
+  "title": "The Chimes\r\r\nA Goblin Story of Some Bells That Rang an Old Year out and a New Year In",
   "authors": "Dickens, Charles, 1812-1870",
   "word_count": 31570
  },
@@ -3253,10 +3216,10 @@
   "word_count": 32507
  },
  {
-  "id": 679,
-  "title": "Poems",
-  "authors": "Harper, Frances Ellen Watkins, 1825-1911",
-  "word_count": 12331
+  "id": 681,
+  "title": "Creatures That Once Were Men",
+  "authors": "Gorky, Maksim, 1868-1936; Chesterton, G. K. (Gilbert Keith), 1874-1936 [Commentator]",
+  "word_count": 25542
  },
  {
   "id": 683,
@@ -3554,7 +3517,7 @@
  },
  {
   "id": 743,
-  "title": "Thoughts on Man, His Nature, Productions and Discoveries\r\nInterspersed with Some Particulars Respecting the Author",
+  "title": "Thoughts on Man, His Nature, Productions and Discoveries\r\r\nInterspersed with Some Particulars Respecting the Author",
   "authors": "Godwin, William, 1756-1836",
   "word_count": 116456
  },
@@ -3686,7 +3649,7 @@
  },
  {
   "id": 770,
-  "title": "The Story of the Treasure Seekers\r\nBeing the Adventures of the Bastable Children in Search of a Fortune",
+  "title": "The Story of the Treasure Seekers\r\r\nBeing the Adventures of the Bastable Children in Search of a Fortune",
   "authors": "Nesbit, E. (Edith), 1858-1924",
   "word_count": 54593
  },
@@ -3728,7 +3691,7 @@
  },
  {
   "id": 779,
-  "title": "The Tragical History of Doctor Faustus\r\nFrom the Quarto of 1604",
+  "title": "The Tragical History of Doctor Faustus\r\r\nFrom the Quarto of 1604",
   "authors": "Marlowe, Christopher, 1564-1593; Dyce, Alexander, 1798-1869 [Editor]",
   "word_count": 20014
  },
@@ -3866,7 +3829,7 @@
  },
  {
   "id": 811,
-  "title": "The Tragical History of Doctor Faustus\r\nFrom the Quarto of 1616",
+  "title": "The Tragical History of Doctor Faustus\r\r\nFrom the Quarto of 1616",
   "authors": "Marlowe, Christopher, 1564-1593; Dyce, Alexander, 1798-1869 [Editor]",
   "word_count": 21895
  },
@@ -4238,7 +4201,7 @@
  },
  {
   "id": 899,
-  "title": "Wonderful Balloon Ascents; Or, The Conquest of the Skies\r\nA History of Balloons and Balloon Voyages",
+  "title": "Wonderful Balloon Ascents; Or, The Conquest of the Skies\r\r\nA History of Balloons and Balloon Voyages",
   "authors": "Marion, Fulgence",
   "word_count": 50432
  },
@@ -4274,7 +4237,7 @@
  },
  {
   "id": 907,
-  "title": "Flying Machines: Construction and Operation\r\nA Practical Book Which Shows, in Illustrations, Working Plans and Text, How to Build and Navigate the Modern Airship",
+  "title": "Flying Machines: Construction and Operation\r\r\nA Practical Book Which Shows, in Illustrations, Working Plans and Text, How to Build and Navigate the Modern Airship",
   "authors": "Jackman, William J. (William James), 1850-; Chanute, Octave, 1832-1910; Russell, Thomas Herbert, 1862-1947",
   "word_count": 50884
  },
@@ -4376,13 +4339,13 @@
  },
  {
   "id": 926,
-  "title": "Ten Thousand Dreams Interpreted; Or, What's in a Dream\r\nA Scientific and Practical Exposition",
+  "title": "Ten Thousand Dreams Interpreted; Or, What's in a Dream\r\r\nA Scientific and Practical Exposition",
   "authors": "Miller, Gustavus Hindman, 1857-1929",
   "word_count": 145786
  },
  {
   "id": 930,
-  "title": "The Cook's Decameron\r\nA Study in Taste, Containing over Two Hundred Recipes for Italian Dishes",
+  "title": "The Cook's Decameron\r\r\nA Study in Taste, Containing over Two Hundred Recipes for Italian Dishes",
   "authors": "Waters, W. G., Mrs.",
   "word_count": 45786
  },
@@ -4430,7 +4393,7 @@
  },
  {
   "id": 939,
-  "title": "The Life of Thomas Telford, Civil Engineer\r\nWith an Introductory History of Roads and Travelling in Great Britain",
+  "title": "The Life of Thomas Telford, Civil Engineer\r\r\nWith an Introductory History of Roads and Travelling in Great Britain",
   "authors": "Smiles, Samuel, 1812-1904",
   "word_count": 104650
  },
@@ -4544,7 +4507,7 @@
  },
  {
   "id": 958,
-  "title": "Rinkitink in Oz\r\nWherein Is Recorded the Perilous Quest of Prince Inga of Pingaree and King Rinkitink in the Magical Isles That Lie Beyond the Borderland of Oz",
+  "title": "Rinkitink in Oz\r\r\nWherein Is Recorded the Perilous Quest of Prince Inga of Pingaree and King Rinkitink in the Magical Isles That Lie Beyond the Borderland of Oz",
   "authors": "Baum, L. Frank (Lyman Frank), 1856-1919",
   "word_count": 49974
  },
@@ -4556,19 +4519,19 @@
  },
  {
   "id": 960,
-  "title": "The Tin Woodman of Oz\r\nA Faithful Story of the Astonishing Adventure Undertaken by the Tin Woodman, Assisted by Woot the Wanderer, the Scarecrow of Oz, and Polychrome, the Rainbow's Daughter",
+  "title": "The Tin Woodman of Oz\r\r\nA Faithful Story of the Astonishing Adventure Undertaken by the Tin Woodman, Assisted by Woot the Wanderer, the Scarecrow of Oz, and Polychrome, the Rainbow's Daughter",
   "authors": "Baum, L. Frank (Lyman Frank), 1856-1919",
   "word_count": 45299
  },
  {
   "id": 961,
-  "title": "Glinda of Oz\r\nIn Which Are Related the Exciting Experiences of Princess Ozma of Oz, and Dorothy, in Their Hazardous Journey to the Home of the Flatheads, and to the Magic Isle of the Skeezers, and How They Were Rescued from Dire Peril by the Sorcery of Glinda the Good",
+  "title": "Glinda of Oz\r\r\nIn Which Are Related the Exciting Experiences of Princess Ozma of Oz, and Dorothy, in Their Hazardous Journey to the Home of the Flatheads, and to the Magic Isle of the Skeezers, and How They Were Rescued from Dire Peril by the Sorcery of Glinda the Good",
   "authors": "Baum, L. Frank (Lyman Frank), 1856-1919",
   "word_count": 40579
  },
  {
   "id": 962,
-  "title": "The Poems of Henry Kendall\r\nWith Biographical Note by Bertram Stevens",
+  "title": "The Poems of Henry Kendall\r\r\nWith Biographical Note by Bertram Stevens",
   "authors": "Kendall, Henry, 1839-1882; Stevens, Bertram, 1872-1922 [Contributor]",
   "word_count": 98378
  },
@@ -4600,7 +4563,7 @@
   "id": 967,
   "title": "Nicholas Nickleby",
   "authors": "Dickens, Charles, 1812-1870",
-  "word_count": 330978
+  "word_count": 330974
  },
  {
   "id": 968,
@@ -4634,7 +4597,7 @@
  },
  {
   "id": 973,
-  "title": "Howard Pyle's Book of Pirates\r\nFiction, Fact & Fancy Concerning the Buccaneers & Marooners of the Spanish Main",
+  "title": "Howard Pyle's Book of Pirates\r\r\nFiction, Fact & Fancy Concerning the Buccaneers & Marooners of the Spanish Main",
   "authors": "Pyle, Howard, 1853-1911",
   "word_count": 73892
  },
@@ -4654,13 +4617,7 @@
   "id": 976,
   "title": "Tanglewood Tales",
   "authors": "Hawthorne, Nathaniel, 1804-1864",
-  "word_count": 66203
- },
- {
-  "id": 977,
-  "title": "American Notes",
-  "authors": "Kipling, Rudyard, 1865-1936",
-  "word_count": 27078
+  "word_count": 66199
  },
  {
   "id": 979,
@@ -4688,7 +4645,7 @@
  },
  {
   "id": 984,
-  "title": "Who Was Who: 5000 B. C. to Date\r\nBiographical Dictionary of the Famous and Those Who Wanted to Be",
+  "title": "Who Was Who: 5000 B. C. to Date\r\r\nBiographical Dictionary of the Famous and Those Who Wanted to Be",
   "authors": "Gordon, Irwin Leslie, 1888-1954 [Editor]",
   "word_count": 21898
  },
@@ -5090,7 +5047,7 @@
  },
  {
   "id": 1061,
-  "title": "Myths and Myth-Makers\r\nOld Tales and Superstitions Interpreted by Comparative Mythology",
+  "title": "Myths and Myth-Makers\r\r\nOld Tales and Superstitions Interpreted by Comparative Mythology",
   "authors": "Fiske, John, 1842-1901",
   "word_count": 77852
  },
@@ -5162,7 +5119,7 @@
  },
  {
   "id": 1082,
-  "title": "Voyage of the Paper Canoe\r\nA Geographical Journey of 2500 Miles, from Quebec to the Gulf of Mexico, During the Years 1874-5",
+  "title": "Voyage of the Paper Canoe\r\r\nA Geographical Journey of 2500 Miles, from Quebec to the Gulf of Mexico, During the Years 1874-5",
   "authors": "Bishop, Nathaniel H. (Nathaniel Holmes), 1837-1902",
   "word_count": 85274
  },
@@ -5269,10 +5226,220 @@
   "word_count": 107129
  },
  {
+  "id": 1100,
+  "title": "King Henry VI, Part 1",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 23311
+ },
+ {
+  "id": 1101,
+  "title": "King Henry VI, Part 2",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 27352
+ },
+ {
+  "id": 1102,
+  "title": "King Henry VI, Part 3",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 26281
+ },
+ {
+  "id": 1103,
+  "title": "King Richard III",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 31338
+ },
+ {
+  "id": 1104,
+  "title": "The Comedy of Errors",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 16465
+ },
+ {
+  "id": 1106,
+  "title": "Titus Andronicus",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 22126
+ },
+ {
+  "id": 1107,
+  "title": "The Taming of the Shrew",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 22867
+ },
+ {
+  "id": 1108,
+  "title": "The Two Gentlemen of Verona",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 19129
+ },
+ {
+  "id": 1109,
+  "title": "Love's Labour's Lost",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 23340
+ },
+ {
+  "id": 1110,
+  "title": "King John",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 22420
+ },
+ {
+  "id": 1111,
+  "title": "King Richard II",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 23537
+ },
+ {
+  "id": 1112,
+  "title": "Romeo and Juliet",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 26222
+ },
+ {
+  "id": 1113,
+  "title": "A Midsummer Night's Dream",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 17866
+ },
+ {
+  "id": 1114,
+  "title": "The Merchant of Venice",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 22864
+ },
+ {
+  "id": 1115,
+  "title": "King Henry IV, Part 1",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 26519
+ },
+ {
+  "id": 1116,
+  "title": "The Merry Wives of Windsor",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 23855
+ },
+ {
+  "id": 1117,
+  "title": "King Henry IV, Part 2",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 28019
+ },
+ {
+  "id": 1118,
+  "title": "Much Ado about Nothing",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 22975
+ },
+ {
+  "id": 1119,
+  "title": "King Henry V",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 27985
+ },
+ {
+  "id": 1120,
+  "title": "Julius Caesar",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 21441
+ },
+ {
+  "id": 1121,
+  "title": "As You Like It",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 23535
+ },
+ {
+  "id": 1122,
+  "title": "Hamlet",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 30901
+ },
+ {
+  "id": 1123,
+  "title": "Twelfth Night",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 21839
+ },
+ {
+  "id": 1124,
+  "title": "Troilus and Cressida",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 28388
+ },
+ {
+  "id": 1125,
+  "title": "All's Well That Ends Well",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 25227
+ },
+ {
+  "id": 1126,
+  "title": "Measure for Measure",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 23719
+ },
+ {
+  "id": 1127,
+  "title": "Othello",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 28816
+ },
+ {
+  "id": 1128,
+  "title": "King Lear",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 26004
+ },
+ {
   "id": 1129,
   "title": "The Tragedy of Macbeth",
   "authors": "Shakespeare, William, 1564-1616",
   "word_count": 18910
+ },
+ {
+  "id": 1130,
+  "title": "Antony and Cleopatra",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 27072
+ },
+ {
+  "id": 1131,
+  "title": "Coriolanus",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 30078
+ },
+ {
+  "id": 1132,
+  "title": "Timon of Athens",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 20169
+ },
+ {
+  "id": 1133,
+  "title": "Cymbeline",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 29844
+ },
+ {
+  "id": 1134,
+  "title": "The Winter's Tale",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 27259
+ },
+ {
+  "id": 1135,
+  "title": "The Tempest",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 18492
+ },
+ {
+  "id": 1136,
+  "title": "King Henry VIII",
+  "authors": "Shakespeare, William, 1564-1616",
+  "word_count": 26676
  },
  {
   "id": 1138,
@@ -5318,7 +5485,7 @@
  },
  {
   "id": 1145,
-  "title": "Rupert of Hentzau: From The Memoirs of Fritz Von Tarlenheim\r\nSequel to The Prisoner of Zenda",
+  "title": "Rupert of Hentzau: From The Memoirs of Fritz Von Tarlenheim\r\r\nSequel to The Prisoner of Zenda",
   "authors": "Hope, Anthony, 1863-1933",
   "word_count": 85165
  },
@@ -5342,7 +5509,7 @@
  },
  {
   "id": 1149,
-  "title": "From London to Land's End\r\nand Two Letters from the \"Journey through England by a Gentleman\"",
+  "title": "From London to Land's End\r\r\nand Two Letters from the \"Journey through England by a Gentleman\"",
   "authors": "Defoe, Daniel, 1661?-1731; Morley, Henry, 1822-1894 [Editor]",
   "word_count": 41709
  },
@@ -5390,7 +5557,7 @@
  },
  {
   "id": 1157,
-  "title": "Damaged Goods\r\nThe great play \"Les avariés\" by Brieux, novelized with the approval of the author",
+  "title": "Damaged Goods\r\r\nThe great play \"Les avariés\" by Brieux, novelized with the approval of the author",
   "authors": "Sinclair, Upton, 1878-1968; Brieux, Eugène, 1858-1932",
   "word_count": 34668
  },
@@ -5438,13 +5605,13 @@
  },
  {
   "id": 1165,
-  "title": "The Little Book of Modern Verse\r\nA Selection from the Work of Contemporaneous American Poets",
+  "title": "The Little Book of Modern Verse\r\r\nA Selection from the Work of Contemporaneous American Poets",
   "authors": "Rittenhouse, Jessie Belle, 1869-1948 [Editor]",
   "word_count": 45919
  },
  {
   "id": 1166,
-  "title": "The Second Book of Modern Verse\r\nA Selection from the Work of Contemporaneous American Poets",
+  "title": "The Second Book of Modern Verse\r\r\nA Selection from the Work of Contemporaneous American Poets",
   "authors": "Rittenhouse, Jessie Belle, 1869-1948 [Editor]",
   "word_count": 51227
  },
@@ -5612,7 +5779,7 @@
  },
  {
   "id": 1198,
-  "title": "Robbery under Arms\r\nA Story of Life and Adventure in the Bush and in the Australian Goldfields",
+  "title": "Robbery under Arms\r\r\nA Story of Life and Adventure in the Bush and in the Australian Goldfields",
   "authors": "Boldrewood, Rolf, 1826-1915",
   "word_count": 217655
  },
@@ -5720,7 +5887,7 @@
  },
  {
   "id": 1217,
-  "title": "Penelope's Experiences in Scotland\r\nBeing Extracts from the Commonplace Book of Penelope Hamilton",
+  "title": "Penelope's Experiences in Scotland\r\r\nBeing Extracts from the Commonplace Book of Penelope Hamilton",
   "authors": "Wiggin, Kate Douglas Smith, 1856-1923",
   "word_count": 59962
  },
@@ -5804,7 +5971,7 @@
  },
  {
   "id": 1234,
-  "title": "Organic Syntheses\r\nAn Annual Publication of Satisfactory Methods for the Preparation of Organic Chemicals",
+  "title": "Organic Syntheses\r\r\nAn Annual Publication of Satisfactory Methods for the Preparation of Organic Chemicals",
   "authors": "Conant, James Bryant, 1893-1978 [Editor]",
   "word_count": 21539
  },
@@ -5816,7 +5983,7 @@
  },
  {
   "id": 1236,
-  "title": "First Across the Continent\r\nThe Story of the Exploring Expedition of Lewis and Clark in 1804-5-6",
+  "title": "First Across the Continent\r\r\nThe Story of the Exploring Expedition of Lewis and Clark in 1804-5-6",
   "authors": "Brooks, Noah, 1830-1903",
   "word_count": 109944
  },
@@ -6020,7 +6187,7 @@
  },
  {
   "id": 1275,
-  "title": "Alexandria and Her Schools\r\nFour Lectures Delivered at the Philosophical Institution, Edinburgh",
+  "title": "Alexandria and Her Schools\r\r\nFour Lectures Delivered at the Philosophical Institution, Edinburgh",
   "authors": "Kingsley, Charles, 1819-1875",
   "word_count": 38551
  },
@@ -6038,7 +6205,7 @@
  },
  {
   "id": 1278,
-  "title": "Penelope's English Experiences\r\nBeing Extracts from the Commonplace Book of Penelope Hamilton",
+  "title": "Penelope's English Experiences\r\r\nBeing Extracts from the Commonplace Book of Penelope Hamilton",
   "authors": "Wiggin, Kate Douglas Smith, 1856-1923",
   "word_count": 31724
  },
@@ -6218,7 +6385,7 @@
  },
  {
   "id": 1310,
-  "title": "The Annals of the Parish\r\nOr, the Chronicle of Dalmailing During the Ministry of the Rev. Micah Balwhidder",
+  "title": "The Annals of the Parish\r\r\nOr, the Chronicle of Dalmailing During the Ministry of the Rev. Micah Balwhidder",
   "authors": "Galt, John, 1779-1839",
   "word_count": 66374
  },
@@ -6266,13 +6433,13 @@
  },
  {
   "id": 1318,
-  "title": "The Twin Hells\r\nA Thrilling Narrative of Life in the Kansas and Missouri Penitentiaries",
+  "title": "The Twin Hells\r\r\nA Thrilling Narrative of Life in the Kansas and Missouri Penitentiaries",
   "authors": "Reynolds, John N. (John Newton)",
   "word_count": 66916
  },
  {
   "id": 1319,
-  "title": "Increasing Human Efficiency in Business\r\nA Contribution to the Psychology of Business",
+  "title": "Increasing Human Efficiency in Business\r\r\nA Contribution to the Psychology of Business",
   "authors": "Scott, Walter Dill, 1869-1955",
   "word_count": 59135
  },
@@ -6290,7 +6457,7 @@
  },
  {
   "id": 1323,
-  "title": "History of the Conquest of Peru\r\nWith a Preliminary View of the Civilization of the Incas",
+  "title": "History of the Conquest of Peru\r\r\nWith a Preliminary View of the Civilization of the Incas",
   "authors": "Prescott, William Hickling, 1796-1859",
   "word_count": 301774
  },
@@ -6446,7 +6613,7 @@
  },
  {
   "id": 1355,
-  "title": "The Underground City; Or, The Black Indies\r\n(Sometimes Called The Child of the Cavern)",
+  "title": "The Underground City; Or, The Black Indies\r\r\n(Sometimes Called The Child of the Cavern)",
   "authors": "Verne, Jules, 1828-1905",
   "word_count": 44209
  },
@@ -6518,7 +6685,7 @@
  },
  {
   "id": 1368,
-  "title": "When the World Shook\r\nBeing an Account of the Great Adventure of Bastin, Bickley and Arbuthnot",
+  "title": "When the World Shook\r\r\nBeing an Account of the Great Adventure of Bastin, Bickley and Arbuthnot",
   "authors": "Haggard, H. Rider (Henry Rider), 1856-1925",
   "word_count": 121386
  },
@@ -6680,7 +6847,7 @@
  },
  {
   "id": 1398,
-  "title": "The Doré Lectures\r\nBeing Sunday addresses at the Doré Gallery, London, given in connection with the Higher Thought Centre",
+  "title": "The Doré Lectures\r\r\nBeing Sunday addresses at the Doré Gallery, London, given in connection with the Higher Thought Centre",
   "authors": "Troward, T. (Thomas), 1847-1916",
   "word_count": 25423
  },
@@ -6883,12 +7050,6 @@
   "word_count": 271120
  },
  {
-  "id": 1439,
-  "title": "Dreams",
-  "authors": "Schreiner, Olive, 1855-1920",
-  "word_count": 19828
- },
- {
   "id": 1440,
   "title": "Woman and Labour",
   "authors": "Schreiner, Olive, 1855-1920",
@@ -6962,7 +7123,7 @@
  },
  {
   "id": 1452,
-  "title": "Native Life in South Africa\r\nBefore and Since the European War and the Boer Rebellion",
+  "title": "Native Life in South Africa\r\r\nBefore and Since the European War and the Boer Rebellion",
   "authors": "Plaatje, Sol. T. (Solomon Tshekisho), 1876-1932",
   "word_count": 134616
  },
@@ -7027,12 +7188,6 @@
   "word_count": 13022
  },
  {
-  "id": 1466,
-  "title": "Creatures That Once Were Men",
-  "authors": "Gorky, Maksim, 1868-1936; Chesterton, G. K. (Gilbert Keith), 1874-1936 [Author of introduction, etc.]; Shirazi, J. K. M. [Translator]",
-  "word_count": 64804
- },
- {
   "id": 1467,
   "title": "Some Christmas Stories",
   "authors": "Dickens, Charles, 1812-1870",
@@ -7043,12 +7198,6 @@
   "title": "The History of England, from the Accession of James II — Volume 1",
   "authors": "Macaulay, Thomas Babington Macaulay, Baron, 1800-1859",
   "word_count": 226349
- },
- {
-  "id": 1469,
-  "title": "Poems",
-  "authors": "Thompson, Francis, 1859-1907",
-  "word_count": 11156
  },
  {
   "id": 1470,
@@ -7094,7 +7243,7 @@
  },
  {
   "id": 1478,
-  "title": "A Parody Outline of History\r\nWherein May Be Found a Curiously Irreverent Treatment of American Historical Events, Imagining Them as They Would Be Narrated by America's Most Characteristic Contemporary Authors",
+  "title": "A Parody Outline of History\r\r\nWherein May Be Found a Curiously Irreverent Treatment of American Historical Events, Imagining Them as They Would Be Narrated by America's Most Characteristic Contemporary Authors",
   "authors": "Stewart, Donald Ogden, 1894-1980; Roth, Herb, 1887-1953 [Illustrator]",
   "word_count": 23889
  },
@@ -7124,7 +7273,7 @@
  },
  {
   "id": 1483,
-  "title": "Forty Centuries of Ink\r\nOr, A chronological narrative concerning ink and its backgrounds, introducing incidental observations and deductions, parallels of time and color phenomena, bibliography, chemistry, poetical effusions, citations, anecdotes and curiosa together with some evidence respecting the evanescent character of most inks of to-day and an epitome of chemico-legal ink.",
+  "title": "Forty Centuries of Ink\r\r\nOr, A chronological narrative concerning ink and its backgrounds, introducing incidental observations and deductions, parallels of time and color phenomena, bibliography, chemistry, poetical effusions, citations, anecdotes and curiosa together with some evidence respecting the evanescent character of most inks of to-day and an epitome of chemico-legal ink.",
   "authors": "Carvalho, David Nunes, 1848-1925",
   "word_count": 98565
  },
@@ -7172,7 +7321,7 @@
  },
  {
   "id": 1492,
-  "title": "The Life of Columbus\r\nFrom His Own Letters and Journals and Other Documents of His Time",
+  "title": "The Life of Columbus\r\r\nFrom His Own Letters and Journals and Other Documents of His Time",
   "authors": "Hale, Edward Everett, 1822-1909",
   "word_count": 56762
  },
@@ -7201,12 +7350,6 @@
   "word_count": 11394
  },
  {
-  "id": 1497,
-  "title": "The Republic",
-  "authors": "Plato, 428? BCE-348? BCE; Jowett, Benjamin, 1817-1893 [Translator]",
-  "word_count": 217472
- },
- {
   "id": 1498,
   "title": "Beacon Lights of History, Volume 3 part 1: The Middle Ages",
   "authors": "Lord, John, 1810-1894",
@@ -7217,18 +7360,6 @@
   "title": "Beacon Lights of History, Volume 3 part 2: Renaissance and Reformation",
   "authors": "Lord, John, 1810-1894",
   "word_count": 99604
- },
- {
-  "id": 1501,
-  "title": "King Henry VI, Part 2",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 27454
- },
- {
-  "id": 1502,
-  "title": "King Henry VI, Part 3",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 26621
  },
  {
   "id": 1505,
@@ -7243,10 +7374,10 @@
   "word_count": 26521
  },
  {
-  "id": 1526,
-  "title": "Twelfth Night",
+  "id": 1533,
+  "title": "Macbeth",
   "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 21932
+  "word_count": 19163
  },
  {
   "id": 1537,
@@ -7280,7 +7411,7 @@
  },
  {
   "id": 1550,
-  "title": "A Lady of Quality\r\nBeing a Most Curious, Hitherto Unknown History, as Related by Mr. Isaac Bickerstaff but Not Presented to the World of Fashion Through the Pages of The Tatler, and Now for the First Time Written Down",
+  "title": "A Lady of Quality\r\r\nBeing a Most Curious, Hitherto Unknown History, as Related by Mr. Isaac Bickerstaff but Not Presented to the World of Fashion Through the Pages of The Tatler, and Now for the First Time Written Down",
   "authors": "Burnett, Frances Hodgson, 1849-1924",
   "word_count": 85076
  },
@@ -7352,7 +7483,7 @@
  },
  {
   "id": 1564,
-  "title": "Boswell's Life of Johnson\r\nAbridged and edited, with an introduction by Charles Grosvenor Osgood",
+  "title": "Boswell's Life of Johnson\r\r\nAbridged and edited, with an introduction by Charles Grosvenor Osgood",
   "authors": "Boswell, James, 1740-1795; Osgood, Charles Grosvenor, 1871-1964 [Editor]",
   "word_count": 219525
  },
@@ -7364,15 +7495,9 @@
  },
  {
   "id": 1566,
-  "title": "The Evolution of Modern Medicine\r\nA Series of Lectures Delivered at Yale University on the Silliman Foundation in April, 1913",
+  "title": "The Evolution of Modern Medicine\r\r\nA Series of Lectures Delivered at Yale University on the Silliman Foundation in April, 1913",
   "authors": "Osler, William, Sir, 1849-1919",
   "word_count": 65969
- },
- {
-  "id": 1568,
-  "title": "Poems",
-  "authors": "Henley, William Ernest, 1849-1903",
-  "word_count": 24711
  },
  {
   "id": 1569,
@@ -7508,7 +7633,7 @@
  },
  {
   "id": 1592,
-  "title": "The Greatest English Classic\r\nA Study of the King James Version of the Bible and Its Influence on Life and Literature",
+  "title": "The Greatest English Classic\r\r\nA Study of the King James Version of the Bible and Its Influence on Life and Literature",
   "authors": "McAfee, Cleland Boyd, 1866-1944",
   "word_count": 64383
  },
@@ -7616,7 +7741,7 @@
  },
  {
   "id": 1611,
-  "title": "Seventeen\r\nA Tale of Youth and Summer Time and the Baxter Family, Especially William",
+  "title": "Seventeen\r\r\nA Tale of Youth and Summer Time and the Baxter Family, Especially William",
   "authors": "Tarkington, Booth, 1869-1946",
   "word_count": 69681
  },
@@ -7628,7 +7753,7 @@
  },
  {
   "id": 1613,
-  "title": "Count Bunker\r\nBeing a Bald Yet Veracious Chronicle Containing Some Further Particulars of Two Gentlemen Whose Previous Careers Were Touched Upon in a Tome Entitled \"The Lunatic at Large\"",
+  "title": "Count Bunker\r\r\nBeing a Bald Yet Veracious Chronicle Containing Some Further Particulars of Two Gentlemen Whose Previous Careers Were Touched Upon in a Tome Entitled \"The Lunatic at Large\"",
   "authors": "Clouston, J. Storer (Joseph Storer), 1870-1944",
   "word_count": 58318
  },
@@ -7724,7 +7849,7 @@
  },
  {
   "id": 1631,
-  "title": "A Monk of Fife\r\nBeing the Chronicle Written by Norman Leslie of Pitcullo, Concerning Marvellous Deeds That Befell in the Realm of France, in the Years of Our Redemption, MCCCCXXIX-XXXI",
+  "title": "A Monk of Fife\r\r\nBeing the Chronicle Written by Norman Leslie of Pitcullo, Concerning Marvellous Deeds That Befell in the Realm of France, in the Years of Our Redemption, MCCCCXXIX-XXXI",
   "authors": "Lang, Andrew, 1844-1912",
   "word_count": 107080
  },
@@ -8018,7 +8143,7 @@
  },
  {
   "id": 1694,
-  "title": "Our Legal Heritage: The First Thousand Years: 600 - 1600\r\nKing Aethelbert - Queen Elizabeth",
+  "title": "Our Legal Heritage: The First Thousand Years: 600 - 1600\r\r\nKing Aethelbert - Queen Elizabeth",
   "authors": "Reilly, S. A.",
   "word_count": 114846
  },
@@ -8210,7 +8335,7 @@
  },
  {
   "id": 1727,
-  "title": "The Odyssey\r\nRendered into English prose for the use of those who cannot read the original",
+  "title": "The Odyssey\r\r\nRendered into English prose for the use of those who cannot read the original",
   "authors": "Homer, 751? BCE-651? BCE; Butler, Samuel, 1835-1902 [Translator]",
   "word_count": 129993
  },
@@ -8371,214 +8496,16 @@
   "word_count": 13379
  },
  {
-  "id": 1765,
-  "title": "King Henry VI, Part 1",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 23552
- },
- {
-  "id": 1768,
-  "title": "King Richard III",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 33979
- },
- {
-  "id": 1769,
-  "title": "The Comedy of Errors",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 18653
- },
- {
   "id": 1770,
   "title": "King Edward III",
   "authors": "Shakespeare, William, 1564-1616 [Dubious author]",
   "word_count": 21254
  },
  {
-  "id": 1771,
-  "title": "Titus Andronicus",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 24170
- },
- {
-  "id": 1772,
-  "title": "The Taming of the Shrew",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 24765
- },
- {
-  "id": 1773,
-  "title": "The Two Gentlemen of Verona",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 20738
- },
- {
-  "id": 1774,
-  "title": "Love's Labour's Lost",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 25405
- },
- {
-  "id": 1775,
-  "title": "King John",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 24278
- },
- {
-  "id": 1776,
-  "title": "King Richard II",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 25856
- },
- {
-  "id": 1777,
-  "title": "Romeo and Juliet",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 28553
- },
- {
-  "id": 1778,
-  "title": "A Midsummer Night's Dream",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 19627
- },
- {
-  "id": 1779,
-  "title": "The Merchant of Venice",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 24577
- },
- {
-  "id": 1780,
-  "title": "King Henry IV, Part 1",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 28362
- },
- {
-  "id": 1781,
-  "title": "The Merry Wives of Windsor",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 26176
- },
- {
-  "id": 1782,
-  "title": "King Henry IV, Part 2",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 30373
- },
- {
-  "id": 1783,
-  "title": "Much Ado About Nothing",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 24905
- },
- {
-  "id": 1784,
-  "title": "King Henry V",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 30127
- },
- {
-  "id": 1785,
-  "title": "Julius Caesar",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 23090
- },
- {
-  "id": 1786,
-  "title": "As You Like It",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 25297
- },
- {
-  "id": 1787,
-  "title": "Hamlet",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 35089
- },
- {
   "id": 1788,
   "title": "Sir John Oldcastle",
   "authors": "Shakespeare, William, 1564-1616 [Dubious author]",
   "word_count": 23718
- },
- {
-  "id": 1790,
-  "title": "Troilus and Cressida",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 30408
- },
- {
-  "id": 1791,
-  "title": "All's Well That Ends Well",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 27114
- },
- {
-  "id": 1792,
-  "title": "Measure for Measure",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 25390
- },
- {
-  "id": 1793,
-  "title": "Othello",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 30452
- },
- {
-  "id": 1794,
-  "title": "King Lear",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 30344
- },
- {
-  "id": 1795,
-  "title": "Macbeth",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 20695
- },
- {
-  "id": 1796,
-  "title": "Antony and Cleopatra",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 29103
- },
- {
-  "id": 1797,
-  "title": "Coriolanus",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 32039
- },
- {
-  "id": 1798,
-  "title": "Timon of Athens",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 22268
- },
- {
-  "id": 1799,
-  "title": "Cymbeline",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 31783
- },
- {
-  "id": 1800,
-  "title": "The Winter's Tale",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 28913
- },
- {
-  "id": 1801,
-  "title": "The Tempest",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 20041
- },
- {
-  "id": 1802,
-  "title": "King Henry VIII",
-  "authors": "Shakespeare, William, 1564-1616",
-  "word_count": 28522
  },
  {
   "id": 1803,
@@ -8732,7 +8659,7 @@
  },
  {
   "id": 1838,
-  "title": "A New Voyage to Carolina\r\nContaining the exact description and natural history of that country; together with the present state thereof; and a journal of a thousand miles, travel'd thro' several nations of Indians; giving a particular account of their customs, manners, etc.",
+  "title": "A New Voyage to Carolina\r\r\nContaining the exact description and natural history of that country; together with the present state thereof; and a journal of a thousand miles, travel'd thro' several nations of Indians; giving a particular account of their customs, manners, etc.",
   "authors": "Lawson, John, 1674-1711",
   "word_count": 111354
  },
@@ -9032,7 +8959,7 @@
  },
  {
   "id": 1889,
-  "title": "Bird Neighbors\r\nAn Introductory Acquaintance with One Hundred and Fifty Birds Commonly Found in the Gardens, Meadows, and Woods About Our Homes",
+  "title": "Bird Neighbors\r\r\nAn Introductory Acquaintance with One Hundred and Fifty Birds Commonly Found in the Gardens, Meadows, and Woods About Our Homes",
   "authors": "Blanchan, Neltje, 1865-1918; Burroughs, John, 1837-1921 [Author of introduction, etc.]",
   "word_count": 69246
  },
@@ -9104,7 +9031,7 @@
  },
  {
   "id": 1903,
-  "title": "Everybody's Guide to Money Matters\r\nWith a description of the various investments chiefly dealt in on the stock exchange, and the mode of dealing therein",
+  "title": "Everybody's Guide to Money Matters\r\r\nWith a description of the various investments chiefly dealt in on the stock exchange, and the mode of dealing therein",
   "authors": "Cotton, William, F.S.A., of Exeter",
   "word_count": 26171
  },
@@ -9224,7 +9151,7 @@
  },
  {
   "id": 1926,
-  "title": "The Whole History of Grandfather's Chair\r\nOr, True Stories from New England History, 1620-1808",
+  "title": "The Whole History of Grandfather's Chair\r\r\nOr, True Stories from New England History, 1620-1808",
   "authors": "Hawthorne, Nathaniel, 1804-1864",
   "word_count": 57915
  },
@@ -9542,7 +9469,7 @@
  },
  {
   "id": 1989,
-  "title": "The Foolish Dictionary\r\nAn exhausting work of reference to un-certain English words, their origin, meaning, legitimate and illegitimate use, confused by a few pictures [not included]",
+  "title": "The Foolish Dictionary\r\r\nAn exhausting work of reference to un-certain English words, their origin, meaning, legitimate and illegitimate use, confused by a few pictures [not included]",
   "authors": "Wurdz, Gideon, 1875-",
   "word_count": 11942
  },
@@ -9560,7 +9487,7 @@
  },
  {
   "id": 1992,
-  "title": "Travels in England during the reign of Queen Elizabeth; with Fragmenta regalia\r\nor, Observations on Queen Elizabeth, her times and favourites",
+  "title": "Travels in England during the reign of Queen Elizabeth; with Fragmenta regalia\r\r\nor, Observations on Queen Elizabeth, her times and favourites",
   "authors": "Hentzner, Paul, 1558-1623; Naunton, Robert, Sir, 1563-1635",
   "word_count": 35143
  },
@@ -9626,7 +9553,7 @@
  },
  {
   "id": 2009,
-  "title": "The Origin of Species by Means of Natural Selection\r\nOr, the Preservation of Favoured Races in the Struggle for Life, 6th Edition",
+  "title": "The Origin of Species by Means of Natural Selection\r\r\nOr, the Preservation of Favoured Races in the Struggle for Life, 6th Edition",
   "authors": "Darwin, Charles, 1809-1882",
   "word_count": 209326
  },
@@ -9892,7 +9819,7 @@
   "id": 2055,
   "title": "Two Years Before the Mast",
   "authors": "Dana, Richard Henry, 1815-1882; Keyes, Homer Eaton, 1875-1938 [Author of introduction, etc.]",
-  "word_count": 171073
+  "word_count": 171049
  },
  {
   "id": 2056,
@@ -10052,7 +9979,7 @@
  },
  {
   "id": 2082,
-  "title": "Memoirs of the Comtesse Du Barry\r\nWith Minute Details of Her Entire Career as Favorite of Louis XV",
+  "title": "Memoirs of the Comtesse Du Barry\r\r\nWith Minute Details of Her Entire Career as Favorite of Louis XV",
   "authors": "Lamothe-Langon, Etienne-Léon, baron de, 1786-1864",
   "word_count": 161819
  },
@@ -10139,263 +10066,5 @@
   "title": "History of Friedrich II of Prussia — Volume 01",
   "authors": "Carlyle, Thomas, 1795-1881",
   "word_count": 18972
- },
- {
-  "id": 2102,
-  "title": "History of Friedrich II of Prussia — Volume 02",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 36235
- },
- {
-  "id": 2103,
-  "title": "History of Friedrich II of Prussia — Volume 03",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 53803
- },
- {
-  "id": 2104,
-  "title": "History of Friedrich II of Prussia — Volume 04",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 41168
- },
- {
-  "id": 2105,
-  "title": "History of Friedrich II of Prussia — Volume 05",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 33002
- },
- {
-  "id": 2106,
-  "title": "History of Friedrich II of Prussia — Volume 06",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 39908
- },
- {
-  "id": 2107,
-  "title": "History of Friedrich II of Prussia — Volume 07",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 48212
- },
- {
-  "id": 2108,
-  "title": "History of Friedrich II of Prussia — Volume 08",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 24038
- },
- {
-  "id": 2109,
-  "title": "History of Friedrich II of Prussia — Volume 09",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 57958
- },
- {
-  "id": 2110,
-  "title": "History of Friedrich II of Prussia — Volume 10",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 44850
- },
- {
-  "id": 2111,
-  "title": "History of Friedrich II of Prussia — Volume 11",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 50222
- },
- {
-  "id": 2112,
-  "title": "History of Friedrich II of Prussia — Volume 12",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 74264
- },
- {
-  "id": 2113,
-  "title": "History of Friedrich II of Prussia — Volume 13",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 61016
- },
- {
-  "id": 2114,
-  "title": "History of Friedrich II of Prussia — Volume 14",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 56081
- },
- {
-  "id": 2115,
-  "title": "History of Friedrich II of Prussia — Volume 15",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 74840
- },
- {
-  "id": 2116,
-  "title": "History of Friedrich II of Prussia — Volume 16",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 89288
- },
- {
-  "id": 2117,
-  "title": "History of Friedrich II of Prussia — Volume 17",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 37567
- },
- {
-  "id": 2118,
-  "title": "History of Friedrich II of Prussia — Volume 18",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 126444
- },
- {
-  "id": 2119,
-  "title": "History of Friedrich II of Prussia — Volume 19",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 85012
- },
- {
-  "id": 2120,
-  "title": "History of Friedrich II of Prussia — Volume 20",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 108108
- },
- {
-  "id": 2121,
-  "title": "History of Friedrich II of Prussia — Volume 21",
-  "authors": "Carlyle, Thomas, 1795-1881",
-  "word_count": 120193
- },
- {
-  "id": 2123,
-  "title": "The Crime of Sylvestre Bonnard",
-  "authors": "France, Anatole, 1844-1924",
-  "word_count": 70687
- },
- {
-  "id": 2124,
-  "title": "A Record of Buddhistic Kingdoms\r\nBeing an account by the Chinese monk Fa-hsien of travels in India and Ceylon (A.D. 399-414) in search of the Buddhist books of discipline",
-  "authors": "Faxian, 337?-422?; Legge, James, 1815-1897 [Translator]",
-  "word_count": 50218
- },
- {
-  "id": 2125,
-  "title": "The Nile Tributaries of Abyssinia, and the Sword Hunters of the Hamran Arabs",
-  "authors": "Baker, Samuel White, Sir, 1821-1893",
-  "word_count": 151303
- },
- {
-  "id": 2126,
-  "title": "The Quest of the Sacred Slipper",
-  "authors": "Rohmer, Sax, 1883-1959",
-  "word_count": 51919
- },
- {
-  "id": 2127,
-  "title": "Paul and Virginia",
-  "authors": "Saint-Pierre, Bernardin de, 1737-1814",
-  "word_count": 47276
- },
- {
-  "id": 2128,
-  "title": "Narratives of New Netherland, 1609-1664",
-  "authors": "Jameson, J. Franklin (John Franklin), 1859-1937 [Editor]",
-  "word_count": 23098
- },
- {
-  "id": 2129,
-  "title": "Murad the Unlucky, and Other Tales",
-  "authors": "Edgeworth, Maria, 1768-1849; Morley, Henry, 1822-1894 [Editor]",
-  "word_count": 48396
- },
- {
-  "id": 2130,
-  "title": "Utopia",
-  "authors": "More, Thomas, Saint, 1478-1535; Morley, Henry, 1822-1894 [Editor]",
-  "word_count": 43697
- },
- {
-  "id": 2131,
-  "title": "An Account of Egypt",
-  "authors": "Herodotus, 481? BCE-421? BCE; Macaulay, G. C. (George Campbell), 1852-1915 [Translator]",
-  "word_count": 37787
- },
- {
-  "id": 2132,
-  "title": "The Daughter of an Empress",
-  "authors": "Mühlbach, L. (Luise), 1814-1873; Greene, Nathaniel, 1797-1877 [Translator]",
-  "word_count": 119259
- },
- {
-  "id": 2133,
-  "title": "Chinese Sketches",
-  "authors": "Giles, Herbert Allen, 1845-1935",
-  "word_count": 49190
- },
- {
-  "id": 2134,
-  "title": "Utopia of Usurers and Other Essays",
-  "authors": "Chesterton, G. K. (Gilbert Keith), 1874-1936",
-  "word_count": 33021
- },
- {
-  "id": 2135,
-  "title": "Stories by English Authors: London (Selected by Scribners)",
-  "authors": "Anstey, F., 1856-1934 [Contributor]; Barrie, J. M. (James Matthew), 1860-1937 [Contributor]; Corelli, Marie, 1855-1924 [Contributor]; Harraden, Beatrice, 1864-1936 [Contributor]; Morrison, Arthur, 1863-1945 [Contributor]; Quiller-Couch, Arthur, 1863-1944 [Contributor]; Zangwill, Israel, 1864-1926 [Contributor]",
-  "word_count": 40818
- },
- {
-  "id": 2136,
-  "title": "The Tale of Balen",
-  "authors": "Swinburne, Algernon Charles, 1837-1909",
-  "word_count": 15963
- },
- {
-  "id": 2138,
-  "title": "The Day's Work - Part 1",
-  "authors": "Kipling, Rudyard, 1865-1936",
-  "word_count": 69764
- },
- {
-  "id": 2139,
-  "title": "Alvira: The Heroine of Vesuvius",
-  "authors": "O'Reilly, A. J. (Augustine J.)",
-  "word_count": 35134
- },
- {
-  "id": 2140,
-  "title": "Extracts from the Diary of William Bray",
-  "authors": "Bray, William, 1736-1832",
-  "word_count": 12313
- },
- {
-  "id": 2141,
-  "title": "Strictly Business: More Stories of the Four Million",
-  "authors": "Henry, O., 1862-1910",
-  "word_count": 73387
- },
- {
-  "id": 2142,
-  "title": "Childhood",
-  "authors": "Tolstoy, Leo, graf, 1828-1910; Hogarth, C. J. (Charles James), 1869-1942 [Translator]",
-  "word_count": 39198
- },
- {
-  "id": 2145,
-  "title": "Ben-Hur: A tale of the Christ",
-  "authors": "Wallace, Lew, 1827-1905",
-  "word_count": 201830
- },
- {
-  "id": 2147,
-  "title": "The Works of Edgar Allan Poe — Volume 1",
-  "authors": "Poe, Edgar Allan, 1809-1849; Lowell, James Russell, 1819-1891 [Contributor]; Willis, Nathaniel Parker, 1806-1867 [Contributor]",
-  "word_count": 91801
- },
- {
-  "id": 2148,
-  "title": "The Works of Edgar Allan Poe — Volume 2",
-  "authors": "Poe, Edgar Allan, 1809-1849",
-  "word_count": 97012
- },
- {
-  "id": 2149,
-  "title": "The Works of Edgar Allan Poe — Volume 3",
-  "authors": "Poe, Edgar Allan, 1809-1849",
-  "word_count": 101039
  }
 ]
