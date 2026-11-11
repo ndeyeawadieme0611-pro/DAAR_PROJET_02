@@ -230,3 +230,7 @@ frontend/dist/
 
 # PostgreSQL
 postgres_data/
+data/excluded/
+*.deb
+*.log
+
