@@ -132,7 +132,8 @@ def regex_search(pattern: str, sort: Sort = "score",
     """Recherche avancée : livres dont l'index contient un mot qui vérifie la RegEx."""
     t0 = time.perf_counter()
     try:
-        matches = build_matcher(pattern)
+        # l'index est en minuscules : on y met aussi le motif (S(a|g|r)+on -> s(a|g|r)+on)
+        matches = build_matcher(pattern.lower())
     except ValueError as e:
         raise HTTPException(status_code=400, detail=f"RegEx invalide : {e}")
 
