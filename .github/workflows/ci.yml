@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main, "awa/**", "maissa/**", "data-postgesql"]
+    branches: ["**"]
   pull_request:
     branches: [main]
 
