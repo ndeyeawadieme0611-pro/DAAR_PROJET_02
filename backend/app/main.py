@@ -160,7 +160,7 @@ def book(book_id: int, chars: int = Query(3000, ge=0, le=20000)):
     """Détail d'un livre : métadonnées, début du texte et livres voisins."""
     with connect() as con, con.cursor() as cur:
         info = cur.execute(
-            """SELECT id, title, authors, word_count, pagerank,
+            """SELECT id, title, authors, word_count, pagerank, excerpt,
                       (SELECT COUNT(*) + 1 FROM books b2 WHERE b2.pagerank > books.pagerank) AS pr_rank
                FROM books WHERE id = %s""",
             (book_id,)).fetchone()
@@ -168,7 +168,13 @@ def book(book_id: int, chars: int = Query(3000, ge=0, le=20000)):
             raise HTTPException(status_code=404, detail="Livre introuvable")
         info["neighbors"] = neighbors_of(cur, [book_id], [book_id], limit=8)
 
-    text = (RAW_DIR / f"{book_id}.txt").read_text(encoding="utf-8")
+    # L'extrait vient de la base (colonne books.excerpt, remplie une fois).
+    # Repli : le fichier texte s'il est présent (développement local).
+    text = info.pop("excerpt", None) or ""
+    if not text:
+        path = RAW_DIR / f"{book_id}.txt"
+        if path.exists():
+            text = path.read_text(encoding="utf-8")
     info["excerpt"] = text[:chars]
     return info
 
