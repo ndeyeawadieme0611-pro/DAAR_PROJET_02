@@ -1,0 +1,45 @@
+test,livres,parametre,moyenne_ms,ecart_type_ms,repetitions,detail
+index,200,love,2.418,0.897,30,188 livres
+index,200,whale,2.028,0.606,30,24 livres
+index,200,sargon,1.396,0.558,30,0 livres
+regex_automate,200,s(a|g|r)+on,42.295,1.471,5,0 mots sur 116144
+regex_re,200,s(a|g|r)+on,19.282,0.753,5,
+regex_automate,200,wh.le,38.858,0.918,5,2 mots sur 116144
+regex_re,200,wh.le,23.940,0.887,5,
+regex_automate,200,colou*r,44.455,1.656,5,2 mots sur 116144
+regex_re,200,colou*r,41.817,15.760,5,
+index,500,love,7.403,1.439,30,479 livres
+index,500,whale,3.401,1.560,30,66 livres
+index,500,sargon,1.950,0.198,30,2 livres
+regex_automate,500,s(a|g|r)+on,78.000,2.225,5,3 mots sur 213767
+regex_re,500,s(a|g|r)+on,34.749,0.157,5,
+regex_automate,500,wh.le,73.958,0.797,5,3 mots sur 213767
+regex_re,500,wh.le,41.352,0.668,5,
+regex_automate,500,colou*r,74.529,0.476,5,2 mots sur 213767
+regex_re,500,colou*r,42.774,0.562,5,
+index,1000,love,8.552,3.821,30,950 livres
+index,1000,whale,2.690,0.322,30,144 livres
+index,1000,sargon,2.485,0.232,30,8 livres
+regex_automate,1000,s(a|g|r)+on,134.045,46.914,5,3 mots sur 311865
+regex_re,1000,s(a|g|r)+on,50.966,0.542,5,
+regex_automate,1000,wh.le,102.814,0.858,5,3 mots sur 311865
+regex_re,1000,wh.le,65.472,7.392,5,
+regex_automate,1000,colou*r,112.212,4.209,5,2 mots sur 311865
+regex_re,1000,colou*r,61.828,2.054,5,
+index,1678,love,7.299,0.791,30,1592 livres
+index,1678,whale,4.181,1.140,30,249 livres
+index,1678,sargon,3.321,0.237,30,12 livres
+regex_automate,1678,s(a|g|r)+on,242.214,98.115,5,3 mots sur 495384
+regex_re,1678,s(a|g|r)+on,81.567,1.175,5,
+regex_automate,1678,wh.le,166.178,4.513,5,4 mots sur 495384
+regex_re,1678,wh.le,104.397,9.974,5,
+regex_automate,1678,colou*r,180.738,6.149,5,2 mots sur 495384
+regex_re,1678,colou*r,97.790,1.037,5,
+kmp_texte,25,whale+sargon,1090.540,22.139,3,8511497 caracteres
+index_meme_taille,25,whale+sargon,3.940,2.619,30,
+kmp_texte,50,whale+sargon,2490.179,53.085,3,19076368 caracteres
+index_meme_taille,50,whale+sargon,1.926,0.649,30,
+kmp_texte,100,whale+sargon,5378.581,77.290,3,40683393 caracteres
+index_meme_taille,100,whale+sargon,1.317,0.380,30,
+kmp_texte,200,whale+sargon,10724.354,658.339,3,78597396 caracteres
+index_meme_taille,200,whale+sargon,1.808,0.377,30,

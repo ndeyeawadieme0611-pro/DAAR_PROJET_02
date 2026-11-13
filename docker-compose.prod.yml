@@ -1,0 +1,55 @@
+# Déploiement complet : PostgreSQL + API FastAPI + Nginx (site Vue).
+# Lancement (depuis ~/app, sur le serveur) :
+#   docker compose -f docker-compose.prod.yml --env-file ~/daar/.env up -d --build
+# "name: daar" : on réutilise le volume de la base déjà restaurée (daar_pgdata).
+name: daar
+
+services:
+  db:
+    image: postgres:18
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    restart: unless-stopped
+    environment:
+      # format "clé=valeur" accepté par psycopg : pas de souci avec les caractères du mot de passe
+      DATABASE_URL: host=db port=5432 dbname=${POSTGRES_DB} user=${POSTGRES_USER} password=${POSTGRES_PASSWORD}
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - backend
+
+  web:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+    networks:
+      - backend
+
+volumes:
+  pgdata:
+
+networks:
+  backend:

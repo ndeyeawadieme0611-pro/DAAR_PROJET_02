@@ -226,3 +226,13 @@ data/processed/
 # Front
 frontend/node_modules/
 frontend/dist/
+.venv/
+
+# PostgreSQL
+postgres_data/
+data/excluded/
+*.deb
+*.log
+
+
+data/processed_SAVE/
