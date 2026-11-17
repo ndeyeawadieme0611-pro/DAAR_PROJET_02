@@ -1,0 +1,68 @@
+name: CI/CD
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+      - name: Installer les dépendances
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest
+      - name: Tests unitaires
+        run: python -m pytest -q
+
+  images:
+    needs: tests                      # ne démarre que si tests est vert
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Image API (FastAPI)
+        run: docker build -f backend/Dockerfile -t daar-api .
+      - name: Image web (Vue + Nginx)
+        run: docker build -f frontend/Dockerfile -t daar-web .
+
+  deploy:
+    needs: [tests, images]            # ne démarre que si les deux sont verts
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    concurrency: deploy
+    permissions:
+      contents: read
+    steps:
+      - name: Déployer sur le serveur AWS
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+          ssh -i ~/.ssh/deploy_key "$SSH_USER@$SSH_HOST" "GH_TOKEN='$GH_TOKEN' REPO='$REPO' bash -s" <<'EOF'
+          set -e
+          cd ~/app
+          git fetch "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git" main
+          git checkout -B deploy FETCH_HEAD
+          docker compose -f docker-compose.prod.yml --env-file ~/daar/.env up -d --build
+          docker image prune -f
+          curl -fsS --retry 10 --retry-delay 3 --retry-all-errors http://localhost/api/stats
+          EOF
