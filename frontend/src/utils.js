@@ -12,17 +12,6 @@ export function shortAuthor(authors) {
   return parts[0] || 'Auteur inconnu'
 }
 
-// Couleur propre à chaque livre : l'id est multiplié par l'angle d'or (137,5°),
-// ce qui répartit les teintes sur le cercle chromatique sans répétition visible.
-export const hueOf = (id) => Math.round((id * 137.508) % 360)
-
-export function coverStyle(id) {
-  const h = hueOf(id)
-  return {
-    background: `linear-gradient(145deg, hsl(${h} 38% 42%), hsl(${(h + 30) % 360} 44% 25%))`,
-  }
-}
-
 // Distance de Jaccard -> libellé lisible. Les voisins ont tous d < 0,91 ;
 // un pourcentage "1 - d" (ex. 17 %) laisserait croire qu'ils se ressemblent peu.
 export function closeness(distance) {
@@ -46,3 +35,9 @@ export function compact(n) {
   if (n >= 1e3) return `${Math.round(n / 1e3)} k`
   return String(n)
 }
+
+// Couleurs des reliures dessinées (toile sourde) : une par livre, toujours la même.
+export const BOOK_COLORS = ['#2f5d46', '#7a2633', '#2a3d5c', '#a8773a', '#56677a', '#5b3a55', '#2e5e63', '#9a4e36']
+export const bookColor = (id) => BOOK_COLORS[Math.abs(id * 7 + 3) % BOOK_COLORS.length]
+// Décor doré de la couverture : 0 = filets, 1 = cadre, 2 = losange, 3 = bandeau
+export const bookPattern = (id) => Math.abs(id * 13 + 5) % 4
