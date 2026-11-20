@@ -1,10 +1,10 @@
 <script setup>
-// Mini-graphe : le livre au centre, ses voisins de Jaccard autour.
+// Graphe local : le livre au centre, ses voisins de Jaccard autour.
 // Plus un voisin est proche (distance faible), plus il est près du centre
-// et plus son arête est épaisse.
+// et plus son trait est épais.
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { cleanTitle, hueOf, initials } from '../utils'
+import { cleanTitle, initials } from '../utils'
 
 const props = defineProps({
   book: { type: Object, required: true },
@@ -32,29 +32,30 @@ const nodes = computed(() => {
     const anchor = side === 'left' ? 'end' : side === 'right' ? 'start' : 'middle'
     return {
       ...n, x, y, lx, ly, anchor,
-      width: 4 - 3 * t,                                     // arête de 4 px à 1 px
+      width: 3 - 2.2 * t,                                   // trait de 3 px à 0,8 px
       label: label.length > 24 ? label.slice(0, 23) + '…' : label,
     }
   })
 })
-const color = (id) => `hsl(${hueOf(id)} 38% 40%)`
 </script>
 
 <template>
-  <svg :viewBox="`0 0 ${W} ${H}`" class="graph" role="img"
-       :aria-label="`Graphe des ${neighbors.length} livres voisins`">
-    <line v-for="n in nodes" :key="'e' + n.id" :x1="CX" :y1="CY" :x2="n.x" :y2="n.y"
-          class="graph-edge" :stroke-width="n.width" />
+  <div class="graph-wrap">
+    <svg :viewBox="`0 0 ${W} ${H}`" class="graph" role="img"
+         :aria-label="`Plan des ${neighbors.length} livres voisins`">
+      <line v-for="n in nodes" :key="'e' + n.id" :x1="CX" :y1="CY" :x2="n.x" :y2="n.y"
+            class="graph-edge" :stroke-width="n.width" />
 
-    <g v-for="n in nodes" :key="'n' + n.id" class="graph-node" tabindex="0"
-       @click="router.push(`/books/${n.id}`)" @keydown.enter="router.push(`/books/${n.id}`)">
-      <title>{{ cleanTitle(n.title) }} — distance {{ n.distance.toFixed(2) }}</title>
-      <circle :cx="n.x" :cy="n.y" r="17" :fill="color(n.id)" />
-      <text :x="n.x" :y="n.y + 4" class="graph-initials">{{ initials(n.title) }}</text>
-      <text :x="n.lx" :y="n.ly" :text-anchor="n.anchor" class="graph-label">{{ n.label }}</text>
-    </g>
+      <g v-for="n in nodes" :key="'n' + n.id" class="graph-node" tabindex="0"
+         @click="router.push(`/books/${n.id}`)" @keydown.enter="router.push(`/books/${n.id}`)">
+        <title>{{ cleanTitle(n.title) }} — distance {{ n.distance.toFixed(2) }}</title>
+        <circle :cx="n.x" :cy="n.y" r="17" />
+        <text :x="n.x" :y="n.y + 4" class="graph-initials">{{ initials(n.title) }}</text>
+        <text :x="n.lx" :y="n.ly" :text-anchor="n.anchor" class="graph-label">{{ n.label }}</text>
+      </g>
 
-    <circle :cx="CX" :cy="CY" r="27" :fill="color(book.id)" class="graph-center" />
-    <text :x="CX" :y="CY + 6" class="graph-initials graph-initials-lg">{{ initials(book.title) }}</text>
-  </svg>
+      <circle :cx="CX" :cy="CY" r="27" class="graph-center" />
+      <text :x="CX" :y="CY + 6" class="graph-initials graph-initials-lg">{{ initials(book.title) }}</text>
+    </svg>
+  </div>
 </template>
